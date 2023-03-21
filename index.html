@@ -1,104 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS link  -->
-    <link rel="stylesheet" href="styles.css" />
+		<!-- CSS link  -->
+		<link rel="stylesheet" href="styles.css" />
 
-    <!-- Font Awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+		<!-- Font Awesome  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-    <!-- Bootstrap link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
-      crossorigin="anonymous"
-    />
+		<!-- Bootstrap link -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+			integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+			crossorigin="anonymous"
+		/>
 
-    <title>Dashboard</title>
-  </head>
-  <body>
-    <div class="body">
-      <div class="side-bar">
-        <img
-          src="data:image/png;base64,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"
-          alt="#"
-        />
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<div class="body">
+			<nav class="side-bar">
+				<img
+					src="data:image/png;base64,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"
+					alt="#"
+				/>
+					<div class="overview">
+						<h3>overview</h3>
+						<ul>
+								<li>
+										<a href="#">
+												<i class="fa-solid fa-user"></i>
+											<span>Dashboard</span> 
+                      <i class="fa-sharp fa-solid fa-angle-down dropdown"></i>
 
-        <h3>overview</h3>
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-user"></i>
-                   <span>Dashboard</span> 
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-duotone fa-wallet"></i>
-                   <span>Wallet/portfolio</span> 
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-money-simple-from-bracket"></i>
-                   <span>Transactions</span> 
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    
-                   <span>Exchange</span> 
-                </a>
-            </li>
-        </ul>
-      </div>
+                      
+										</a>
+								</li>
+								<li>
+										<a href="#">
+											<i class="fa-solid fa-wallet"></i>
+											<span>Wallet/portfolio</span> 
+										</a>
+								</li>
+								<li>
+										<a href="#">
+											<i class="fa-light fa-money-bill"></i>
+											<span>Transactions</span> 
+										</a>
+								</li>
+								
+								<li>
+										<a href="#">
+											<i class="fa-solid fa-right-left"></i>   
+											<span>Exchange</span> 
+										</a>
+								</li>
+							</ul>
+					</div>
+			
+					<div class="overview">
+						<h3 >Accounts</h3>
+						<ul>
+								<li>
+										<a href="#">
+											<i class="fa fa-gear"></i> 
+											<span>Settings</span> 
+										</a>
+								</li>
+								<li>
+										<a href="#">
+											<i class="fa-brands fa-square-github"></i>
+											<span>Roqqu Hub</span> 
+										</a>
+								</li>
+								<li>
+										<a href="#">
+											<i class="fa-solid fa-envelope"></i>  
+											<span>Help & support</span> 
+										</a>
+								</li>
+            </ul>
+					</div>
+					
+			</nav>
 
-      <h3>Accounts</h3>
-        <ul>
-            <li>
-                <a href="#">
-                    
-                   <span>Settings</span> 
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    
-                   <span>Roqqu Hub</span> 
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    
-                   <span>Help & support</span> 
-                </a>
-            </li>
+			<header class="main-header">
+				<h2>Dashboard</h2>
 
-      <header class="header">
-        <h2>Dashboard</h2>
-
-        <div class="input-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search for assets"
-          />
-        </div>
-      </header>
-      <main></main>
-    </div>
-  </body>
+				<div class="input-icon">
+					<i class="fa-solid fa-magnifying-glass search"></i>
+					<input
+						type="text"
+						name="search"
+						id="search"
+						placeholder="       Search for assets"
+					/>
+				</div>
+			</header>
+			<main></main>
+		</div>
+	</body>
 </html>
