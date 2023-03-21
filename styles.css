@@ -10,19 +10,20 @@ body {
     color: #eee;
 }
  
-.body {
-    display: flex;
-    width: 200px;
-    background-color: #41435e;
-    min-height: 100vh;
+.roqqu {
+    display: flex; 
+    
 }
 
  /* Side-Bar Section  */
  
 .side-bar {
     padding: 15px 15px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    width: 15%;
+    background-color: #41435e;
+    min-height: 100vh;
 }
 .side-bar img {
     width: 70px;
@@ -64,34 +65,90 @@ body {
     padding-left: 5px;
 }
 
-.dropdown {
+/* .dropdown {
     padding-left: 30px;
-}
+} */
 
 /* Header Section */
+
+.main-section {
+    padding: 15px 30px;
+    width: 100%;
+}
 
 .main-header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
-
 }
 
-.header h2 {
-    padding: 120px
+.main-header-right{
+    display: flex;
+    justify-content: center;
+
+}
+    
+.main-header-name img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.main-header-name span {
+    font-size: 13px;
+    padding-left: 7px;
 }
 
 .input-icon {
-    padding-left: 450px;
+    padding-right: 105px;
+    border-radius: 5%;
+    padding-bottom: 15px;
 }
 
 input {
     padding: 7px;
-    background: #1c2127;
-    
+    padding-right: 40px;
+    background: #1a232ce3;
+    border-radius: 10%;
 }
 .search {
     position: absolute;
     padding: 10px;
+}
+
+hr {
+    border-bottom: 1px solid;
+}
+
+ /* Section Left */
+ 
+.section-left h3 {
+    font-size: 15px;
+    padding: 15px 0;
+}
+.section-currency {
+    display: flex;
+}
+
+.section-currency h1 {
+    padding-right: 35px;
+}
+
+#currency {
+    background: #1a232ce3;
+    color: #eee;
+    padding: 0 15px
+}
+
+.quick-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-action h3 {
+    padding-top: 45px;
+}
+
+.show-more {
+    padding-top: 45px;
 }
 
