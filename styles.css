@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #1a232ce3;
+    background-color: #1a232ec3;
     color: #eee;
 }
  
@@ -143,9 +143,9 @@ hr {
 }
 
 #currency {
-    background: #1a232ce3;
+    background: #1a232ec3;
     color: #eee;
-    padding: 0 15px
+    padding: 0 15px;
 }
 
 .quick-action {
@@ -189,6 +189,11 @@ hr {
     font-size: 12px;
  }
 
+.vl {
+    border-left: 1px solid #eee;
+    height: 300px;
+}
+
  /* Section right */
 
  .section-right {
@@ -198,18 +203,46 @@ hr {
 
  .learn-more {
     padding: 15px;
+    padding-top: 5px;
     border-radius: 5%;
-    background-color: blue;
-    height: 100px;
+    background: linear-gradient(to right, #ffe59f, #ff8fb5);
+    height: 110px;
+    width: 250px;
     margin-bottom: 20px;
- }
-
- .learn-more h3 {
-    font-size: 15px;
-    padding-bottom: 10px;
+    color: black;
  }
 
  .learn-more p {
-    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+ }
+ .learn-more2 {
+    padding: 15px;
+    padding-top: 5px;
+    border-radius: 5%;
+    background: linear-gradient(to right, #8585eb, #ff8fb5);
+    height: 110px;
+    width: 250px;
+    margin-bottom: 20px;
+    color: black;
+ }
+
+ .learn-more, .learn-more2 h3 {
+    font-size: 15px;
+    padding-bottom: 10px;
+
+ }
+
+ .learn-more, .learn-more2 p {
+    font-size: 10px;
     padding-bottom: 5px;
+    line-height: 1.5;
+ }
+
+ button {
+    background-color: black;
+    color: #eee;
+    border-radius: 10px;
+    padding: 5px 15px;
+
  }
