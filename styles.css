@@ -166,7 +166,7 @@ hr {
  .assets {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    /* gap: 40px; */
  }
 
  .buy-assets {
@@ -246,3 +246,31 @@ hr {
     padding: 5px 15px;
 
  }
+
+.bottom-section h3 {
+    padding: 25px 0;
+    font-size: 15px;
+} 
+
+.table {
+    background-color: #3b434de3;
+    height: 35vh;
+    width: 100%;
+}
+
+.number {
+    padding: 25px; 
+}
+
+
+.coin {
+    width: 35px;
+    height: 30px;
+    padding-right: 10px;
+}
+.name {
+    padding-right: 140px;
+    align-items: center;
+    display: flex;
+}
+
